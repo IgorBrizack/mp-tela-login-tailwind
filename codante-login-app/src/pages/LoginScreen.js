@@ -3,7 +3,7 @@ import localImage from '../../public/mountain.jpg'
 
 export default function LoginScreen () {
   return (
-    <div className="flex flex justify-center items-center m-auto w-[800px] p-[5px] border-2 rounded-lg border-white bg-slate-900">
+    <div className="w-[400px] p-[5px] flex justify-center items-center m-auto border-2 rounded-lg border-white bg-slate-900 md:flex md:justify-center md:items-center md:m-auto md:w-[800px] md:p-[5px] md:border-2 md:rounded-lg md:border-white md:bg-slate-900">
       <div className="mr-10">
         <div>
           <h1 className="ml-[10px] text-blue-600/75 font-dm-sans text-4xl font-bold">Faça seu Login<span className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent bg-opacity-75">.</span></h1>
@@ -36,10 +36,11 @@ export default function LoginScreen () {
       </div>
       <div clasName='absolute'>
         <Image
-         src={localImage}
-         width={499}
-         height={654}
-         alt='mountain image'
+          className="hidden md:block"
+          src={localImage}
+          width={499}
+          height={654}
+          alt='mountain image'
          />
          <div class="relative inset-0 bg-gradient-to-b from-transparent via-gray-900 to-black opacity-75"></div>
       </div>
